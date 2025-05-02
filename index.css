@@ -36,18 +36,6 @@ span{
 }
 
 
-/* input styling */
-/* .overallcontainer>.head1>input{
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    margin-left: 430px;
-    margin-top: 20px;
-    border: none;
-    box-shadow: inset -1px -1px 3px black; 
-    height: 40px;   
-} */
-
 .dateInput {
     position: fixed;
     top: 20px;

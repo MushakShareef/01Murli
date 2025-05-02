@@ -1,6 +1,4 @@
 
-
-
 window.addEventListener('DOMContentLoaded', () => {
     const dateInput = document.getElementById("dateInput");
     const today = new Date().toISOString().split('T')[0];
@@ -10,7 +8,7 @@ window.addEventListener('DOMContentLoaded', () => {
     function scrollToSectionByDate(date) {
         const section = document.getElementById(date);
         if (section) {
-            section.scrollIntoView({ behavior: "smooth" });
+            section.scrollIntoView({ behavior: "auto" });
         } else {
             console.warn("No section found for date:", date);
         }
