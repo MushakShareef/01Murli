@@ -48,14 +48,17 @@ span{
     height: 40px;   
 } */
 
-.dateInput{
-    display: flex;
+.dateInput {
     position: fixed;
-    margin-left: 990px;
-    margin-top: 22px;
-    width: 50px;
-
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+    background: white;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
 }
+
 
 /* h1 styling */
 .overallcontainer>.head1>h1{
@@ -83,6 +86,9 @@ span{
     top: 0px;
 }
 
+.subtitles{
+    margin-top: 50px;
+}
 
 
 ul{
