@@ -7,12 +7,6 @@
 
 /* ------------------------------------------------- */
 
-html, body {
-    width: 100%;
-    overflow-x: hidden;
-}
-
-
 .overallcontainer{
     
     
@@ -86,35 +80,6 @@ span{
     padding: 10px;
 }
 
-figure {
-    width: 100%;
-    margin: 20px auto;
-    padding: 0 10px; /* Optional: prevent touching screen edges */
-    box-sizing: border-box;
-    text-align: center;
-}
-
-
-figure img {
-    width: 100%;
-    height: auto;
-    max-width: 600px;
-    display: block;
-    margin: 0 auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
-
-
-figcaption {
-    margin-top: 10px;
-    font-weight: bold;
-    text-align: center;
-    font-size: 1rem;
-    color: #333;
-}
-
-
 .subtitles ul {
     display: flex;
     flex-wrap: wrap;             /* Allow items to wrap on small screens */
@@ -143,16 +108,6 @@ button{
     color: aliceblue;
     border-radius: 30px;
 }
-
-.hd1,
-.hd2,
-.hd3 {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-weight: bold;
-}
-
 
 .bodycontent{
     width: 85vw;
@@ -186,22 +141,5 @@ p{
     flex-wrap: wrap;
     position: relative;
     bottom: -17px;
-}
-
-@media (max-width: 400px) {
-    figcaption {
-        font-size: 0.9rem;
-    }
-
-    figure {
-        padding: 0 5px;
-    }
-}
-
-
-.fade-out {
-    opacity: 0;
-    transition: opacity 3s ease-in-out; /* 👈 now it fades out over 3 seconds */
-    pointer-events: none;
 }
 
