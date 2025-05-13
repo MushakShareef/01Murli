@@ -72,26 +72,34 @@ span{
 .head2>p{
     position: relative;
     top: 0px;
+    font-weight: bolder;
 }
 
-.subtitles{
-    margin-top: 50px;
+.subtitles {
+    margin-top: 20px;
+    padding: 10px;
 }
 
-
-ul{
+.subtitles ul {
     display: flex;
-    list-style-type: none;
-    justify-content: space-evenly;
-    padding-top: 20px;
+    flex-wrap: wrap;             /* Allow items to wrap on small screens */
+    gap: 10px;                   /* Add space between items */
+    justify-content: center;     /* Center items */
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 90vw;
 }
 
-
-li{
+.subtitles li {
     font-size: 16px;
     font-weight: bolder;
-    height: 50px;
-    /* padding: 5px; */
+    padding: 8px 12px;
+    background-color: #f3f3f3;
+    border-radius: 8px;
+    text-align: center;
+    flex: 1 1 auto;              /* Responsive sizing */
+    min-width: 120px;            /* Prevent squishing too much */
 }
 
 button{
