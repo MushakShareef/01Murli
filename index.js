@@ -26,6 +26,18 @@ window.addEventListener('DOMContentLoaded', () => {
     function loadContentForDate(date) {
         const murliBody = document.querySelector(".MurliBody");
 
+            const figure = document.querySelector("figure");
+
+    if (figure && !figure.classList.contains("fade-out")) {
+        figure.classList.add("fade-out");
+
+        // Optional: Completely remove it after fade (e.g., after 2s)
+        setTimeout(() => {
+            figure.style.display = "none";
+        }, 2000); // wait for fade animation to complete
+    }
+
+
         const dateObj = new Date(date);
         const year = dateObj.getFullYear();
         const month = String(dateObj.getMonth() + 1).padStart(2, '0'); // JS months: 0–11
